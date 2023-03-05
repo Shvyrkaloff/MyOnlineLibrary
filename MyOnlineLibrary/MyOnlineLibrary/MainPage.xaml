@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyOnlineLibrary.MainPage">
+
+    <StackLayout x:Name="back" BackgroundColor="#fff">
+        <Label x:Name="Rega" Text="Регистрация" FontSize="20" HorizontalTextAlignment="Center"></Label>
+        <Label x:Name="loginLable" Text="Введите логин" FontSize="15"></Label>
+        <Entry x:Name="LoginEntry"></Entry>
+        <Label x:Name="passLable" Text="Введите пароль" FontSize="15"  ></Label>
+        <Entry x:Name="passEntry" IsPassword="True"></Entry>
+        <Label x:Name="passLable2" Text="Повторите пароль" FontSize="15"></Label>
+        <Entry x:Name="passEntry2" IsPassword="True"></Entry>
+        <Label x:Name="bithLable" Text="Дата рождения" ></Label>
+        <DatePicker x:Name="bithPicker"></DatePicker>
+        <Label x:Name="contactLable" Text="Контактная информация" FontSize="20" HorizontalTextAlignment="Center"></Label>
+        <Label x:Name="phoneLable" Text="Номер телефона" FontSize="15"></Label>
+        <Entry x:Name="phoneEntry"></Entry>
+        <Label x:Name="EmailLable" Text="Email" FontSize="15"></Label>
+        <Entry x:Name="EmailEntry"></Entry>
+        <Label x:Name="roleLable" Text="Роль" FontSize="20" HorizontalTextAlignment="Center"></Label>
+        <Label x:Name="chooseRoleLable" Text="Выберите роль" FontSize="15"></Label>
+        <Picker x:Name="chooceRolePicker" >
+            <Picker.Items>
+                <x:String>Клиент</x:String>
+                <x:String>Библиотекарь</x:String>
+                <x:String>Администратор</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button x:Name="regButton" Text = "Регистрация" BorderWidth="1" BackgroundColor="LightBlue" Clicked="RegButton_OnClicked" />
+        <Button x:Name="themeButton" Text = "Поменять тему" BorderWidth="1" BackgroundColor="LightBlue" Clicked="ThemeButton_OnClicked"/>
+        <Button x:Name="exitButton" Text = "Выход" BorderWidth="1" BackgroundColor="LightBlue" Clicked="ExitButton_OnClicked"/>
+    </StackLayout>
+</ContentPage>
